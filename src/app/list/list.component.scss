@@ -1,0 +1,94 @@
+.main {
+  margin: auto;
+  padding-top: 20px;
+  height: auto;
+  width: 88%;
+  font-family: sans-serif;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  box-shadow: 0 0 20px rgb(133, 133, 133);
+}
+
+.titleDiv,
+.backDiv,
+.addDiv,
+.logoutDiv {
+  display: flex;
+}
+
+.picsDiv {
+  height: auto;
+  min-height: 50vh;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.backDiv {
+  padding-left: 7.5em;
+  padding-right: 7.7em;
+}
+
+.title {
+  font-size: 20px;
+}
+
+button {
+  height: 2em;
+  width: 6em;
+  font-size: 14px;
+}
+
+.changeButton {
+  // width: 40px;
+  height: 25px;
+  margin: 4px;
+  font-size: 8px;
+}
+
+.slot {
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 4px;
+  margin-left: 3em;
+  margin-right: 3em;
+  box-shadow: 0 0 10px rgb(133, 133, 133);
+}
+
+.innerDiv {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-left: 2.3em;
+  margin-right: 2.5em;
+}
+
+.contentImage {
+  width: 10em;
+  height: 10em;
+  cursor: pointer;
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 4px;
+}
+
+#logoutButton {
+  color: white;
+  background: rgb(246, 38, 38);
+  margin-right: 5.8em;
+  margin-top: 6em;
+}
+
+
+.container {
+  position: absolute;
+}
+
+.spinner {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}

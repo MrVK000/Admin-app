@@ -1,0 +1,40 @@
+<div class="container" style="padding-top: 3em;width: 100%;" [ngStyle]="flag?{'opacity':0.2}:{'opacity':1}">
+  <div class="main">
+    <div class="titleDiv">
+      <div class="title"><label class="title">Login User</label></div>
+    </div>
+    <div class="imageDiv">
+      <div class="image"><img
+          src="https://datacontroller.io/static/home_illustration2-00649b1f413e09cfec86a2afba69dacc.png"></div>
+    </div>
+
+    <div [formGroup]="loginForm" class="inputDiv">
+
+      <div>
+        <mat-form-field>
+          <mat-label>Email:</mat-label>
+          <input matInput formControlName="email">
+          <mat-error *ngIf="loginForm.get('email')?.errors?.['required']">Email is required</mat-error>
+          <mat-error *ngIf="loginForm.get('email')?.errors?.['email']">Invalid Email</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <mat-label>Password:</mat-label>
+          <input matInput formControlName="password">
+          <mat-error *ngIf="loginForm.get('password')?.errors?.['required']">Password is required</mat-error>
+        </mat-form-field>
+      </div>
+
+    </div>
+
+    <div class="button"><button button (click)="validFunc()" mat-raised-button
+        style="background-color: rgb(5, 174, 115);color: white;">Login</button></div>
+
+    <div class="registerDiv" style="padding-bottom: 2em;">
+      <div class="registerLink"><label>Don't have an account?<a routerLink="/register">Register</a></label></div>
+    </div>
+  </div>
+</div>
+<div class="spinner"><mat-spinner *ngIf="flag" style="height: 12em;width: 12em;"></mat-spinner></div>

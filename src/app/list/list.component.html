@@ -1,0 +1,30 @@
+
+<div class="container" style="padding-top: 10px;width: 100%;" [ngStyle]="flag?{'opacity':0.2}:{'opacity':1}">
+    <div class="main">
+        <div class="titleDiv" style="justify-content: center;">
+            <div class="title"><label><strong>User List</strong></label></div>
+        </div>
+        <div class="backDiv" style="justify-content: space-between;">
+            <div class=""><button mat-raised-button (click)="backfun()" style="background: rgb(38, 215, 246);color: white;">Back</button></div>
+            <div class=""><button mat-raised-button routerLink="/add" style="background: rgb(38, 93, 246);color: white;width: 8em;">Add User</button></div>
+        </div>
+        <div class="picsDiv">
+            <div class="innerDiv">
+                <div class="slot" *ngFor="let element of dataArray; index as i">
+                    <div><img id="image" class="contentImage" src={{element.profile_picture}} alt="{{element.name}}" (click)="detailsFunc(i)"></div>
+                    <div style="display: flex;justify-content: center;"><label><strong>{{element.name}}</strong></label></div>
+                    <div style="display: flex;justify-content: center;"><label style="font-size: 12px;">{{element.job}}</label></div>
+                    <div style="display: flex;justify-content: center;">
+                        <div><button mat-raised-button class="changeButton" style="background: rgb(38, 215, 246);color: white;width: 20px;" (click)="editFunc(i)">EDIT</button></div>
+                        <div><button mat-raised-button class="changeButton" style="background: rgb(246, 38, 38);color: white;" (click)="deleteFunc(i)">DELETE</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="logoutDiv" style="flex-direction: row-reverse;">
+            <div class=""><button id="logoutButton" mat-raised-button (click)="navigateFunc()" >Logout</button></div>
+        </div>
+    </div>
+  </div>
+  <div class="spinner"><mat-spinner *ngIf="flag" style="height: 12em;width: 12em;"></mat-spinner></div>
+

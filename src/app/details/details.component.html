@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="main">
+        <div class="titleDiv"><label><strong>User Details</strong></label></div>
+        <div style="padding-left: 10%;"><button mat-raised-button style="background: rgb(38, 215, 246);color: white;" routerLink="/userlist">Back</button></div>
+        <div class="contentDiv">
+            <div style="padding-top: 3em;">
+                <label style="font-size: 18px;"><strong>Name : {{data.name}}</strong></label>
+                <p>ID : {{editId}}</p>
+                <p>Job : {{data.job}}</p>
+                <p>About : {{data.name}} is a {{data.job}}</p>
+            </div>
+            <div><img src="{{data.profile_img}}"></div>
+        </div>
+    </div>
+</div>
+

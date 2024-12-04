@@ -1,0 +1,91 @@
+.main {
+  width: 28%;
+  margin: auto;
+  height: auto;
+  // margin-top: 20px;
+  padding-top: 2em;
+  border-radius: 10px;
+  font-family: sans-serif;
+  box-shadow: 0 0 10px black;
+}
+
+.titleDiv,
+.imageDiv,
+.loginContentDiv,
+.registerDiv,
+.errorMessage,
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.loginContent {
+  width: 50%;
+}
+
+.registerLink {
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+img {
+  height: 10em;
+  width: 10em;
+  margin-bottom: 0px;
+}
+
+.emailInput {
+  width: 100%;
+}
+
+.emailTitle,
+.passwordTitle {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 40%;
+  cursor: pointer;
+  height: 3em;
+  border: none;
+  color: white;
+  background-color: rgb(5, 174, 115);
+  border-radius: 4px;
+}
+
+.mat-mdc-form-field {
+  width: 100%;
+}
+
+.inputDiv {
+  padding-left: 3em;
+  padding-right: 3em;
+  margin: 20px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+  // box-shadow: 0 0 10px black;
+}
+
+input {
+  width: 100%;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+}
+
+.spinner {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}

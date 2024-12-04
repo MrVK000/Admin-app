@@ -1,0 +1,36 @@
+.main {
+  margin: auto;
+  height: auto;
+  width: 28%;
+  font-family: sans-serif;
+  border-radius: 10px;
+  padding-bottom: 2em;
+  box-shadow: 0 0 20px rgb(125, 125, 125);
+}
+
+.titleDiv,
+.contentDiv {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.contentDiv>div {
+  width: 80%;
+}
+
+
+button {
+  height: 2.8em;
+  width: 6em;
+  color: white;
+  background-color: green;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
